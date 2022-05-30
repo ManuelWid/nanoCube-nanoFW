@@ -1,0 +1,373 @@
+$len5: 5vw;
+$len10: 10vw;
+$len25: 25vw;
+$len50: 50vw;
+$duration: 20s;
+
+@mixin cube-image-x($rotX, $transZ) {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+    transform: rotateX($rotX) translateZ($transZ/2);
+}
+
+@mixin cube-image-y($rotY, $transZ) {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+    transform: rotateY($rotY) translateZ($transZ/2);
+}
+
+// cube 5
+.nbs-cube-scene-5 {
+    height: $len5;
+    width: $len5;
+    perspective: $len5*3;
+    text-align: left;
+
+    .nbs-cube {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        animation-name: rotate;
+        animation-duration: $duration;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: rotate;
+        -webkit-animation-duration: $duration;
+        -webkit-animation-iteration-count: infinite;
+        
+        .nbs-ci:nth-child(1) {
+            @include cube-image-y(0deg, $len5);
+        }
+        
+        .nbs-ci:nth-child(2) {
+            @include cube-image-y(90deg, $len5);
+        }
+        
+        .nbs-ci:nth-child(3) {
+            @include cube-image-y(-90deg, $len5);
+        }
+        
+        .nbs-ci:nth-child(4) {
+            @include cube-image-y(180deg, $len5);
+        }
+        
+        .nbs-ci:nth-child(5) {
+            @include cube-image-x(90deg, $len5);
+        }
+        
+        .nbs-ci:nth-child(6) {
+            @include cube-image-x(90deg, -$len5);
+        }
+        
+        .nbs-ci-front {
+            @include cube-image-y(0deg, $len5);
+        }
+        
+        .nbs-ci-right {
+            @include cube-image-y(90deg, $len5);
+        }
+        
+        .nbs-ci-left {
+            @include cube-image-y(-90deg, $len5);
+        }
+        
+        .nbs-ci-back {
+            @include cube-image-y(180deg, $len5);
+        }
+        
+        .nbs-ci-top {
+            @include cube-image-x(90deg, $len5);
+        }
+        
+        .nbs-ci-bottom {
+            @include cube-image-x(90deg, -$len5);
+        }
+    }
+}
+
+// cube 10
+.nbs-cube-scene-10 {
+    height: $len10;
+    width: $len10;
+    perspective: $len10*3;
+    text-align: left;
+
+    .nbs-cube {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        animation-name: rotate;
+        animation-duration: $duration;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: rotate;
+        -webkit-animation-duration: $duration;
+        -webkit-animation-iteration-count: infinite;
+        
+        .nbs-ci:nth-child(1) {
+            @include cube-image-y(0deg, $len10);
+        }
+        
+        .nbs-ci:nth-child(2) {
+            @include cube-image-y(90deg, $len10);
+        }
+        
+        .nbs-ci:nth-child(3) {
+            @include cube-image-y(-90deg, $len10);
+        }
+        
+        .nbs-ci:nth-child(4) {
+            @include cube-image-y(180deg, $len10);
+        }
+        
+        .nbs-ci:nth-child(5) {
+            @include cube-image-x(90deg, $len10);
+        }
+        
+        .nbs-ci:nth-child(6) {
+            @include cube-image-x(90deg, -$len10);
+        }
+        
+        .nbs-ci-front {
+            @include cube-image-y(0deg, $len10);
+        }
+        
+        .nbs-ci-right {
+            @include cube-image-y(90deg, $len10);
+        }
+        
+        .nbs-ci-left {
+            @include cube-image-y(-90deg, $len10);
+        }
+        
+        .nbs-ci-back {
+            @include cube-image-y(180deg, $len10);
+        }
+        
+        .nbs-ci-top {
+            @include cube-image-x(90deg, $len10);
+        }
+        
+        .nbs-ci-bottom {
+            @include cube-image-x(90deg, -$len10);
+        }
+    }
+}
+
+// Cube 25
+.nbs-cube-scene-25 {
+    height: $len25;
+    width: $len25;
+    perspective: $len25*3;
+    text-align: left;
+
+    .nbs-cube {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        animation-name: rotate;
+        animation-duration: $duration;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: rotate;
+        -webkit-animation-duration: $duration;
+        -webkit-animation-iteration-count: infinite;
+        
+        .nbs-ci:nth-child(1) {
+            @include cube-image-y(0deg, $len25);
+        }
+        
+        .nbs-ci:nth-child(2) {
+            @include cube-image-y(90deg, $len25);
+        }
+        
+        .nbs-ci:nth-child(3) {
+            @include cube-image-y(-90deg, $len25);
+        }
+        
+        .nbs-ci:nth-child(4) {
+            @include cube-image-y(180deg, $len25);
+        }
+        
+        .nbs-ci:nth-child(5) {
+            @include cube-image-x(90deg, $len25);
+        }
+        
+        .nbs-ci:nth-child(6) {
+            @include cube-image-x(90deg, -$len25);
+        }
+        
+        .nbs-ci-front {
+            @include cube-image-y(0deg, $len25);
+        }
+        
+        .nbs-ci-right {
+            @include cube-image-y(90deg, $len25);
+        }
+        
+        .nbs-ci-left {
+            @include cube-image-y(-90deg, $len25);
+        }
+        
+        .nbs-ci-back {
+            @include cube-image-y(180deg, $len25);
+        }
+        
+        .nbs-ci-top {
+            @include cube-image-x(90deg, $len25);
+        }
+        
+        .nbs-ci-bottom {
+            @include cube-image-x(90deg, -$len25);
+        }
+    }
+}
+
+// Cube 50
+.nbs-cube-scene-50 {
+    height: $len50;
+    width: $len50;
+    perspective: $len50*3;
+    text-align: left;
+
+    .nbs-cube {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        animation-name: rotate;
+        animation-duration: $duration;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: rotate;
+        -webkit-animation-duration: $duration;
+        -webkit-animation-iteration-count: infinite;
+        
+        .nbs-ci:nth-child(1) {
+            @include cube-image-y(0deg, $len50);
+        }
+        
+        .nbs-ci:nth-child(2) {
+            @include cube-image-y(90deg, $len50);
+        }
+        
+        .nbs-ci:nth-child(3) {
+            @include cube-image-y(-90deg, $len50);
+        }
+        
+        .nbs-ci:nth-child(4) {
+            @include cube-image-y(180deg, $len50);
+        }
+        
+        .nbs-ci:nth-child(5) {
+            @include cube-image-x(90deg, $len50);
+        }
+        
+        .nbs-ci:nth-child(6) {
+            @include cube-image-x(90deg, -$len50);
+        }
+        
+        .nbs-ci-front {
+            @include cube-image-y(0deg, $len50);
+        }
+        
+        .nbs-ci-right {
+            @include cube-image-y(90deg, $len50);
+        }
+        
+        .nbs-ci-left {
+            @include cube-image-y(-90deg, $len50);
+        }
+        
+        .nbs-ci-back {
+            @include cube-image-y(180deg, $len50);
+        }
+        
+        .nbs-ci-top {
+            @include cube-image-x(90deg, $len50);
+        }
+        
+        .nbs-ci-bottom {
+            @include cube-image-x(90deg, -$len50);
+        }
+    }
+}
+
+.nbs-cube.nbs-ease-in {
+    animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+}
+
+.nbs-cube.nbs-ease-out {
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+.nbs-cube.nbs-ease-in-out {
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+.nbs-cube.nbs-linear {
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+
+.nbs-cube.nbs-step-start {
+    animation-timing-function: step-start;
+    -webkit-animation-timing-function: step-start;
+}
+
+.nbs-cube.nbs-step-end {
+    animation-timing-function: step-end;
+    -webkit-animation-timing-function: step-end;
+}
+
+.nbs-cube.nbs-duration-5 {
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+}
+
+.nbs-cube.nbs-duration-10 {
+    animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+}
+
+.nbs-cube.nbs-duration-15 {
+    animation-duration: 15s;
+    -webkit-animation-duration: 15s;
+}
+
+.nbs-cube.nbs-duration-20 {
+    animation-duration: 20s;
+    -webkit-animation-duration: 20s;
+}
+
+@keyframes rotate {
+	0% { transform: rotateY(0deg);}
+	25% { transform: rotateY(90deg);}
+	50% { transform: rotateY(180deg);}
+	75% {  transform: rotateY(270deg);}
+	100% { transform: rotateY(360deg);}
+}
+
+@-webkit-keyframes rotate {
+	0% { transform: rotateY(0deg);}
+	25% { transform: rotateY(90deg);}
+	50% { transform: rotateY(180deg);}
+	75% {  transform: rotateY(270deg);}
+	100% { transform: rotateY(360deg);}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="http://widner.codefactory.live/notBootstrap.css"> -->
+    <link rel="stylesheet" href="notBootstrap.css">
+    
+    <!-- you can delete the style and assign the margin (if needed) with your css or bootstrap -->
+    <style>
+        .m-xy{
+            margin: 5vw auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- basic cube html structure:
+    sizings are "nbs-cube-scene-5/10/25/50", the number represents the size in vw.
+
+    images are placed by either (only one OR the other):
+        use "nbs-ci-front/right/left/..." for the image class
+        OR
+        give all img tags the "nbs-ci" class, the order will then be front/right/left/back/top/bottom.
+    images will be auto cropped to the chosen size. image is centered (meaning there will be equal crop on both sides).
+    you can use any picture you like, internal or external.
+
+    margins must be given on the wrapper ("nbs-cube-scene-xx"), you can use bootstrap or your own class instead of 
+    the internal style ("m-xy").
+
+    to change animation timing function give the "nbs-cube" div a second class e.g. "nbs-linear",
+    default (no extra class given) is ease. (all legal timing functions are available except cubic-bezier and step).
+    
+    animation duration can be set by adding yet another class to the "nbs-cube" div, available is "nbs-duration-5/10/15/20".
+
+    you can also use the class "nbs-a-10/25/50/75/90" to set the alpha(opacity).
+    and "nbs-bg-white" to set a background color in case the img has transparency and you want a background color. -->
+
+    <div class="nbs-cube-scene-10 m-xy">
+        <div class="nbs-cube nbs-linear">
+            <img class="nbs-ci-front nbs-a-50" src="https://cdn.pixabay.com/photo/2019/07/30/18/26/surface-4373559_960_720.jpg" alt="">
+            <img class="nbs-ci-right nbs-a-50" src="https://cdn.pixabay.com/photo/2019/07/30/18/26/surface-4373559_960_720.jpg" alt="">
+            <img class="nbs-ci-left nbs-a-50" src="https://cdn.pixabay.com/photo/2019/07/30/18/26/surface-4373559_960_720.jpg" alt="">
+            <img class="nbs-ci-back nbs-a-50" src="https://cdn.pixabay.com/photo/2019/07/30/18/26/surface-4373559_960_720.jpg" alt="">
+            <img class="nbs-ci-top nbs-a-50" src="https://cdn.pixabay.com/photo/2019/07/30/18/26/surface-4373559_960_720.jpg" alt="">
+            <img class="nbs-ci-bottom nbs-a-50" src="https://cdn.pixabay.com/photo/2019/07/30/18/26/surface-4373559_960_720.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="nbs-cube-scene-5 m-xy">
+        <div class="nbs-cube nbs-duration-10">
+            <img class="nbs-ci" src="https://cdn.pixabay.com/photo/2019/07/30/18/26/surface-4373559_960_720.jpg" alt="">
+            <img class="nbs-ci" src="https://cdn.pixabay.com/photo/2019/07/30/18/26/surface-4373559_960_720.jpg" alt="">
+            <img class="nbs-ci" src="https://cdn.pixabay.com/photo/2019/07/30/18/26/surface-4373559_960_720.jpg" alt="">
+            <img class="nbs-ci" src="https://cdn.pixabay.com/photo/2019/07/30/18/26/surface-4373559_960_720.jpg" alt="">
+            <img class="nbs-ci" src="https://cdn.pixabay.com/photo/2019/07/30/18/26/surface-4373559_960_720.jpg" alt="">
+            <img class="nbs-ci" src="https://cdn.pixabay.com/photo/2019/07/30/18/26/surface-4373559_960_720.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
